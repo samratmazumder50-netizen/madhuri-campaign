@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,15 +38,18 @@ body {
   opacity: 0;
   transform: scale(.4);
 }
-.logo {
+  .logo {
   position: absolute;
+  top: 15%;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
+  max-height: 70%;
   object-fit: contain;
   object-position: center;
-  top: 0;
-  left: 0;
-}
+  transform-origin: center center;
+  opacity: 0;
+  }
 
 .crowd {
   position: absolute;
@@ -152,7 +154,7 @@ body {
 
   <div class="orange"></div>
 
-  <img src="file_000000002e248210a2a7cacc5a96fdcf.png">
+  <img class="logo" src="file_000000002e248210a2a7cacc5a96fdcf.png" alt="ABVP logo">
 
   <div class="crowd"></div>
 
@@ -292,3 +294,4 @@ play.onclick = async () => {
 </script>
 </body>
 </html>
+
